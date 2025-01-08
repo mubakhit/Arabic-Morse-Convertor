@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مُترجم مورس</title>
+    <link rel="icon" type="image/x-icon" href="/images/morse-code.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">مترجم شيفرة مورس</h1>
+      <div class="input-container">
+        <label class="label">تحويل النص إلى شيفرة مورس</label>
+        <textarea class="input" id="textToMorse" rows="4"></textarea>
+        <button onclick="handleTextToMorseTranslate()" class="btn">
+          تحويل إلى مورس
+        </button>
+        <p class="result">
+          <span id="textToMorseOutput"></span>
+          <br />
+          <button class="btn" onclick="copyTextToMorseOutput()">نسخ</button>
+        </p>
+        <p class="success-message" id="textToMorseSuccessMessage"></p>
+      </div>
+      <div class="input-container">
+        <label class="label">تحويل شيفرة مورس إلى نص</label>
+        <textarea class="input" id="morseToText" rows="4"></textarea>
+        <button onclick="handleMorseToTextTranslate()" class="btn">
+          تحويل إلى نص
+        </button>
+        <p class="result">
+          <span id="morseToTextOutput"></span>
+          <br />
+          <button class="btn" onclick="copyMorseToTextOutput()">نسخ</button>
+        </p>
+        <p class="success-message" id="morseToTextSuccessMessage"></p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a
+          href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D9%85%D9%8A%D8%B2_%D9%85%D9%88%D8%B1%D8%B3"
+          target="_blank"
+          class="custom-link"
+          >معلومات عن شيفرة مورس</a
+        >
+        <i class="fa fa-link"></i>
+        <br />
+        <a
+          class="custom-link"
+          href="https://github.com/mubakhit/Arabic-Morse-Convertor"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <i class="fa fa-github" style="font-size: 24px"></i>
+        <br />
+        <a
+          class="custom-link"
+          href="https://www.geeksforgeeks.org/javascript-program-to-build-a-morse-code-converter/"
+          target="_blank"
+          >Geeksforgeeks Source Code</a
+        >
+        <br />
+        Made with Love Ubunzu❤️
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
