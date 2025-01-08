@@ -12,3 +12,8 @@ A simple website to convert text to Morse code and vice versa, specifically for 
 ## Link
 
 - [GitHub Repository](https://github.com/mubakhit/Arabic-Morse-Convertor)
+
+## Screenshots
+
+<img src="images/screenshot1.png" alt="Alt Text">
+<img src="images/screenshot2.png" alt="Alt Text">
